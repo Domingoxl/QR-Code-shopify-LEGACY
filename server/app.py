@@ -8,5 +8,5 @@ def home():
     return "QR Code Memorial App Running!"
 
 if __name__ == "__main__":
-    port = int(os.getenv("PORT", 5000))  # Default to 5000 if PORT is not set
+    port = int(os.getenv("PORT", 5000))  # Get port from environment variable, default to 5000
     app.run(host="0.0.0.0", port=port)
