@@ -1,12 +1,14 @@
-import os
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
-@app.route("/")
+@app.route('/')
 def home():
-    return "QR Code Memorial App Running!"
+    return render_template('index.html')
+
+@app.route('/products')
+def products():
+    return render_template('products.html')
 
 if __name__ == "__main__":
-    port = int(os.getenv("PORT", 5000))  # Get port from environment variable, default to 5000
-    app.run(host="0.0.0.0", port=port)
+    app.run(host="0.0.0.0", port=5000)
