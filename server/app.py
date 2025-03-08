@@ -4,6 +4,7 @@ import os
 app = Flask(__name__, template_folder='server/templates')
 
 
+
 @app.route('/', methods=['GET', 'HEAD'])
 def home():
     return render_template('index.html')
