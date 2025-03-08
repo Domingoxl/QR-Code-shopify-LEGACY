@@ -1,8 +1,7 @@
 from flask import Flask, render_template
 import os
 
-app = Flask(__name__, template_folder='server/templates')
-
+app = Flask(__name__, template_folder='server/templates')  # Ensure Flask finds templates
 
 @app.route('/', methods=['GET', 'HEAD'])
 def home():
