@@ -3,9 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Legacy QR</title>
+    <title>Legacy QR - Memorial Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+        .banner {
+            background: url('https://yourshopify.com/banner-image.jpg') no-repeat center center;
+            background-size: cover;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .product-card img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+    </style>
 </head>
 <body>
-    <h1>QR Code Memorial App Running!</h1>
+    <div class="banner">Legacy QR - Keep Memories Alive</div>
+    
+    <div class="container mt-5">
+        <h2>Our QR Code Memorial Products</h2>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="https://yourshopify.com/images/qr-sticker.jpg" alt="QR Code Sticker">
+                    <div class="card-body">
+                        <h5 class="card-title">QR Code Sticker</h5>
+                        <p class="card-text">A durable sticker to attach to any surface.</p>
+                        <a href="https://yourshopify.com/products/qr-sticker" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="https://yourshopify.com/images/qr-metal.jpg" alt="Stainless Steel QR Code">
+                    <div class="card-body">
+                        <h5 class="card-title">Stainless Steel QR Code</h5>
+                        <p class="card-text">Elegant and weather-resistant.</p>
+                        <a href="https://yourshopify.com/products/qr-metal" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card product-card">
+                    <img src="https://yourshopify.com/images/qr-tombstone.jpg" alt="Carved QR Code on Tombstone">
+                    <div class="card-body">
+                        <h5 class="card-title">Carved QR Code on Tombstone</h5>
+                        <p class="card-text">Permanently engraved for a lasting memory.</p>
+                        <a href="https://yourshopify.com/products/qr-tombstone" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-5 py-3 bg-dark text-light text-center">
+        &copy; 2025 Legacy QR - All Rights Reserved.
+    </footer>
 </body>
 </html>
