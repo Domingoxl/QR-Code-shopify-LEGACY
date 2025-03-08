@@ -6,7 +6,8 @@ app = Flask(__name__, template_folder=os.path.join(os.path.dirname(__file__), "t
 
 @app.route('/', methods=['GET', 'HEAD'])
 def home():
-    return render_template('index.html')
+  return "<h1>QR Code Memorial App Running Successfully!</h1>"
+
 
 if __name__ == "__main__":
     port = int(os.getenv("PORT", 5000))  # Ensure Flask uses the correct port
